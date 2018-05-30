@@ -16,13 +16,16 @@ public class Method {
         }
         if (liczba < 100) {
             System.out.println("liczba jest za mała");
+            return liczby();
         } else if (liczba > 200) {
             System.out.println("liczba jest za duża");
+            return liczby();
         }
         if (liczba % 3 != 0) {
             System.out.println("liczba nie jest podzielna przez 3 ");
+            return liczby();
         }
-        return liczby();
+        return 0;
     }
 }
 
